@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.46.0/dist/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="site-header">
+      <nav aria-label="Primary">
+        <a href="#" class="logo" aria-label="Evorau home">EV</a>
+
+        <ul class="nav-links">
+          <li><a href="#">Men's fashion</a></li>
+          <li><a href="#">Women's fashion</a></li>
+          <li><a href="#">Children's fashion</a></li>
+          <li><a href="#">Underwear &amp; essentials</a></li>
+          <li><a href="#">New arrivals</a></li>
+          <li>
+            <a href="#" class="disabled" aria-disabled="true"
+              >School bags <span>soon</span></a
+            >
+          </li>
+        </ul>
+
+        <a href="https://wa.me/c/2349159113222" class="nav-cta"
+          >Shop on WhatsApp</a
+        >
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- everything else goes below this -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Ota, Ogun State &middot; Wholesale &amp; retail</p>
+          <h1>Fashion for every generation.</h1>
+          <p class="hero-sub">
+            Premium-feeling clothing at prices every family can actually afford
+            &mdash; men's, women's, children's, and essentials, all in one
+            place.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/c/2349159113222" class="btn-primary"
+              >Shop on WhatsApp</a
+            >
+            <a href="#new-arrivals" class="btn-text"
+              >See what's new <span aria-hidden="true">&darr;</span></a
+            >
+          </div>
+          <p class="hero-delivery">Delivery across Lagos &amp; Ogun State</p>
+        </div>
+        <div class="hero-media">
+          <img
+            src="images/hero-family.jpeg"
+            alt="Evorau customers styled in pieces from the men's, women's, and children's collections"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="new-arrivals" class="carousel-section">
+      <div class="section-inner">
+        <p class="eyebrow">Just landed</p>
+        <h2>New arrivals</h2>
+      </div>
+
+      <div
+        class="carousel-stage"
+        id="carouselStage"
+        tabindex="0"
+        aria-label="New arrivals, use the arrows or drag to browse"
+      >
+        <div class="carousel-track" id="carouselTrack">
+          <article class="carousel-card" data-i="0">
+            <div class="card-image">
+              <img
+                src="images/new-1.jpg"
+                alt="Children's beige two-piece hoodie and jogger set"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="card-glass">
+              <p class="card-name">Children's Beige Hoodie Set</p>
+              <p class="card-price">&#8358;23,000</p>
+            </div>
+          </article>
+          <article class="carousel-card" data-i="1">
+            <div class="card-image">
+              <img
+                src="images/new-2.jpg"
+                alt="Men's white patterned polo shirt"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="card-glass">
+              <p class="card-name">Men's Patterned Polo Shirt</p>
+              <p class="card-price">&#8358;12,000</p>
+            </div>
+          </article>
+          <article class="carousel-card" data-i="2">
+            <div class="card-image">
+              <img
+                src="images/new-3.jpg"
+                alt="Women's black heart-print two-piece lounge set"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="card-glass">
+              <p class="card-name">Women's Heart-Print Lounge Set</p>
+              <p class="card-price">&#8358;8,000</p>
+            </div>
+          </article>
+          <article class="carousel-card" data-i="3">
+            <div class="card-image">
+              <img
+                src="images/new-4.jpg"
+                alt="Soft cotton women's essentials"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="card-glass">
+              <p class="card-name">Soft Cotton Essentials (5-Pack)</p>
+              <p class="card-price">&#8358;650 each</p>
+            </div>
+          </article>
+          <article class="carousel-card" data-i="4">
+            <div class="card-image">
+              <img src="images/new-5.jpg" alt="Classic men's t-shirt" loading="lazy"/>
+            </div>
+
+            <div class="card-glass">
+              <p class="card-name">Classic Men's T-Shirt</p>
+              <p class="card-price">&#8358;8,000</p>
+            </div>
+          </article>
+          <article class="carousel-card" data-i="5">
+            <div class="card-image">
+              <img src="images/new-6.jpg" alt="Women's activewear set" loading="lazy"/>
+            </div>
+
+            <div class="card-glass">
+              <p class="card-name">Women's Activewear Set</p>
+              <p class="card-price">&#8358;9,000</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <button class="carousel-arrow" id="carouselPrev" aria-label="Previous">
+          &larr;
+        </button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button class="carousel-arrow" id="carouselNext" aria-label="Next">
+          &rarr;
+        </button>
+      </div>
+    </section>
+    <section id="why-evorau" class="trust-section">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 7l9-4 9 4-9 4-9-4z" />
+              <path d="M3 7v10l9 4 9-4V7" />
+              <path d="M12 11v10" />
+            </svg>
+          </div>
+          <h3>Wholesale &amp; retail</h3>
+          <p>
+            Buy one piece or stock up for resale &mdash; same fair pricing
+            either way.
+          </p>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <h3>Quality you can trust</h3>
+          <p>
+            Every piece checked before it reaches you &mdash; no compromises on
+            fabric or finish.
+          </p>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 3h6a2 2 0 0 1 2 2v6l-9 9-8-8 9-9z" />
+              <circle
+                cx="16.5"
+                cy="7.5"
+                r="1.2"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
+          </div>
+          <h3>Affordable for every family</h3>
+          <p>Premium feel, priced so it actually fits your budget.</p>
+        </div>
+      </div>
+    </section>
+    <section id="shop-by-category" class="category-section">
+      <div class="section-inner">
+        <p class="eyebrow">Shop by category</p>
+        <h2>Something for everyone</h2>
+      </div>
+
+      <div class="category-grid">
+        <a href="https://wa.me/c/2349159113222" class="category-tile">
+          <img src="images/cat-men.jpg" alt="Men's fashion" loading="lazy"/>
+          <span class="category-label">Men's fashion</span>
+        </a>
+        <a href="https://wa.me/c/2349159113222" class="category-tile">
+          <img src="images/cat-women.jpg" alt="Women's fashion" loading="lazy"/>
+          <span class="category-label">Women's fashion</span>
+        </a>
+        <a href="https://wa.me/c/2349159113222" class="category-tile">
+          <img src="images/cat-children.jpg" alt="Children's fashion" loading="lazy"/>
+          <span class="category-label">Children's fashion</span>
+        </a>
+        <a href="https://wa.me/c/2349159113222" class="category-tile">
+          <img src="images/cat-essentials.jpg" alt="Underwear and essentials" loading="lazy"/>
+          <span class="category-label">Underwear &amp; essentials</span>
+        </a>
+      </div>
+    </section>
+    <section id="how-to-order" class="order-section">
+      <div class="section-inner">
+        <p class="eyebrow">How it works</p>
+        <h2>Ordering is simple</h2>
+      </div>
+
+      <div class="order-steps">
+        <div class="order-step">
+          <h3>Message us on WhatsApp</h3>
+          <p>
+            Browse the catalog or tap any "Shop on WhatsApp" button and tell us
+            what you're after.
+          </p>
+        </div>
+        <div class="order-step">
+          <h3>We confirm your order</h3>
+          <p>
+            We confirm the item, size, and price with you directly &mdash; no
+            surprises before you pay.
+          </p>
+        </div>
+        <div class="order-step">
+          <h3>We arrange delivery</h3>
+          <p>
+            Delivery across Lagos &amp; Ogun State, or pick up in person at our
+            Ota store.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer id="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-logo">EV</p>
+          <p class="footer-tagline">Fashion for every generation.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">Men's fashion</a></li>
+            <li><a href="#">Women's fashion</a></li>
+            <li><a href="#">Children's fashion</a></li>
+            <li><a href="#">Underwear &amp; essentials</a></li>
+            <li><a href="#new-arrivals">New arrivals</a></li>
+            <li>
+              <a href="#" class="disabled" aria-disabled="true"
+                >School bags <span>soon</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visit us</h4>
+          <address>
+            Number 3&amp;4, Eleya Complex,<br />
+            Rainbow Bustop, Iyana Iyesi,<br />
+            Ota, Ogun State
+          </address>
+          <p class="footer-delivery">Delivery across Lagos &amp; Ogun State</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <div class="footer-socials">
+            <a
+              href="https://wa.me/c/2349159113222"
+              class="social-icon"
+              aria-label="Chat with us on WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://instagram.com/evorau.ng"
+              class="social-icon"
+              aria-label="Evorau on Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ti ti-brand-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://facebook.com/evorau.ng"
+              class="social-icon"
+              aria-label="Evorau on Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ti ti-brand-facebook" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Evorau. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
