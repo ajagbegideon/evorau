@@ -62,20 +62,32 @@
       name="twitter:image"
       content="https://evorau.com/images/og-image.jpg"
     />
+    <noscript>
+      <style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
   </head>
   <body>
     <header id="site-header">
       <nav aria-label="Primary">
-        <a href="#" class="logo" aria-label="Evorau home">EV</a>
+        <a href="#top" class="logo" aria-label="Evorau home">EV</a>
 
         <ul class="nav-links">
-          <li><a href="#">Men's fashion</a></li>
-          <li><a href="#">Women's fashion</a></li>
-          <li><a href="#">Children's fashion</a></li>
-          <li><a href="#">Underwear &amp; essentials</a></li>
-          <li><a href="#">New arrivals</a></li>
+          <li><a href="#shop-by-category">Men's fashion</a></li>
+          <li><a href="#shop-by-category">Women's fashion</a></li>
+          <li><a href="#shop-by-category">Children's fashion</a></li>
+          <li><a href="#shop-by-category">Underwear &amp; essentials</a></li>
+          <li><a href="#new-arrivals">New arrivals</a></li>
           <li>
-            <a href="#" class="disabled" aria-disabled="true"
+            <a
+              href="https://wa.me/2349159113222?text=Hi%2C%20I%27d%20like%20to%20be%20notified%20when%20school%20bags%20launch"
+              class="coming-soon"
+              target="_blank"
+              rel="noopener noreferrer"
               >School bags <span>soon</span></a
             >
           </li>
@@ -121,7 +133,7 @@
       </div>
     </section>
     <section id="new-arrivals" class="carousel-section">
-      <div class="section-inner">
+      <div class="section-inner reveal">
         <p class="eyebrow">Just landed</p>
         <h2>New arrivals</h2>
       </div>
@@ -232,7 +244,7 @@
     </section>
     <section id="why-evorau" class="trust-section">
       <div class="trust-grid">
-        <div class="trust-item">
+        <div class="trust-item reveal" style="transition-delay: 0ms">
           <div class="trust-icon">
             <svg
               viewBox="0 0 24 24"
@@ -254,7 +266,7 @@
           </p>
         </div>
 
-        <div class="trust-item">
+        <div class="trust-item reveal" style="transition-delay: 90ms">
           <div class="trust-icon">
             <svg
               viewBox="0 0 24 24"
@@ -275,7 +287,7 @@
           </p>
         </div>
 
-        <div class="trust-item">
+        <div class="trust-item reveal" style="transition-delay: 180ms">
           <div class="trust-icon">
             <svg
               viewBox="0 0 24 24"
@@ -301,17 +313,25 @@
       </div>
     </section>
     <section id="shop-by-category" class="category-section">
-      <div class="section-inner">
+      <div class="section-inner reveal">
         <p class="eyebrow">Shop by category</p>
         <h2>Something for everyone</h2>
       </div>
 
       <div class="category-grid">
-        <a href="https://wa.me/c/2349159113222" class="category-tile">
+        <a
+          href="https://wa.me/c/2349159113222"
+          class="category-tile reveal"
+          style="transition-delay: 0ms"
+        >
           <img src="images/cat-men.jpg" alt="Men's fashion" loading="lazy" />
           <span class="category-label">Men's fashion</span>
         </a>
-        <a href="https://wa.me/c/2349159113222" class="category-tile">
+        <a
+          href="https://wa.me/c/2349159113222"
+          class="category-tile reveal"
+          style="transition-delay: 90ms"
+        >
           <img
             src="images/cat-women.jpg"
             alt="Women's fashion"
@@ -319,7 +339,11 @@
           />
           <span class="category-label">Women's fashion</span>
         </a>
-        <a href="https://wa.me/c/2349159113222" class="category-tile">
+        <a
+          href="https://wa.me/c/2349159113222"
+          class="category-tile reveal"
+          style="transition-delay: 180ms"
+        >
           <img
             src="images/cat-children.jpg"
             alt="Children's fashion"
@@ -327,7 +351,11 @@
           />
           <span class="category-label">Children's fashion</span>
         </a>
-        <a href="https://wa.me/c/2349159113222" class="category-tile">
+        <a
+          href="https://wa.me/c/2349159113222"
+          class="category-tile reveal"
+          style="transition-delay: 270ms"
+        >
           <img
             src="images/cat-essentials.jpg"
             alt="Underwear and essentials"
@@ -338,27 +366,27 @@
       </div>
     </section>
     <section id="how-to-order" class="order-section">
-      <div class="section-inner">
+      <div class="section-inner reveal">
         <p class="eyebrow">How it works</p>
         <h2>Ordering is simple</h2>
       </div>
 
       <div class="order-steps">
-        <div class="order-step">
+        <div class="order-step reveal" style="transition-delay: 0ms">
           <h3>Message us on WhatsApp</h3>
           <p>
             Browse the catalog or tap any "Shop on WhatsApp" button and tell us
             what you're after.
           </p>
         </div>
-        <div class="order-step">
+        <div class="order-step reveal" style="transition-delay: 120ms">
           <h3>We confirm your order</h3>
           <p>
             We confirm the item, size, and price with you directly &mdash; no
             surprises before you pay.
           </p>
         </div>
-        <div class="order-step">
+        <div class="order-step reveal" style="transition-delay: 240ms">
           <h3>We arrange delivery</h3>
           <p>
             Delivery across Lagos &amp; Ogun State, or pick up in person at our
@@ -377,13 +405,17 @@
         <div class="footer-col">
           <h4>Shop</h4>
           <ul>
-            <li><a href="#">Men's fashion</a></li>
-            <li><a href="#">Women's fashion</a></li>
-            <li><a href="#">Children's fashion</a></li>
-            <li><a href="#">Underwear &amp; essentials</a></li>
+            <li><a href="#shop-by-category">Men's fashion</a></li>
+            <li><a href="#shop-by-category">Women's fashion</a></li>
+            <li><a href="#shop-by-category">Children's fashion</a></li>
+            <li><a href="#shop-by-category">Underwear &amp; essentials</a></li>
             <li><a href="#new-arrivals">New arrivals</a></li>
             <li>
-              <a href="#" class="disabled" aria-disabled="true"
+              <a
+                href="https://wa.me/2349159113222?text=Hi%2C%20I%27d%20like%20to%20be%20notified%20when%20school%20bags%20launch"
+                class="coming-soon"
+                target="_blank"
+                rel="noopener noreferrer"
                 >School bags <span>soon</span></a
               >
             </li>
@@ -398,6 +430,15 @@
             Ota, Ogun State
           </address>
           <p class="footer-delivery">Delivery across Lagos &amp; Ogun State</p>
+          <a
+            class="directions-link"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Eleya%20Complex%2C%20Rainbow%20Bustop%2C%20Iyana%20Iyesi%2C%20Ota%2C%20Ogun%20State"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="ti ti-map-pin" aria-hidden="true"></i>
+            Get directions
+          </a>
         </div>
 
         <div class="footer-col">
@@ -437,6 +478,17 @@
         <p>&copy; <span id="year"></span> Evorau. All rights reserved.</p>
       </div>
     </footer>
+
+    <a
+      href="https://wa.me/c/2349159113222"
+      class="whatsapp-float"
+      aria-label="Chat with Evorau on WhatsApp"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+    </a>
+
     <script src="js/main.js"></script>
   </body>
 </html>
